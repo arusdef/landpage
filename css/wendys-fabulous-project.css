@@ -194,6 +194,7 @@ figcaption {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  text-align: left;
 }
 
 .content-wrapper.narrow {
@@ -386,8 +387,9 @@ figcaption {
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('../images/161208-F-HX320-072.JPG');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('../images/161208-F-HX320-072.JPG');
   background-position: 0px 0px, 50% 50%;
-  background-size: auto, 2241px;
+  background-size: auto, cover;
   background-repeat: repeat, no-repeat;
+  background-attachment: scroll, scroll;
 }
 
 .hero-section.inner-pages {
@@ -1365,19 +1367,26 @@ figcaption {
 }
 
 .cta-section {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #1e4477;
+  float: none;
+  background-color: #fff;
 }
 
 .cta-header {
-  color: #fff;
+  font-family: Bold, sans-serif;
+  color: #1e4477;
   font-size: 26px;
   line-height: 45px;
 }
 
 .white {
-  color: #fff;
+  font-family: Light, sans-serif;
+  color: #1e4477;
 }
 
 .cta-newsletter-form {
@@ -1387,6 +1396,7 @@ figcaption {
   display: flex;
   max-width: 610px;
   margin-top: 20px;
+  margin-right: 14px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1409,10 +1419,12 @@ figcaption {
   margin-right: 2%;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  font-family: Light, sans-serif;
 }
 
 .text-field.email {
   margin-right: 2%;
+  font-family: Light, sans-serif;
 }
 
 .text-field.password {
@@ -1427,7 +1439,7 @@ figcaption {
   background-color: #494949;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  font-family: Montserrat, sans-serif;
+  font-family: Bold, sans-serif;
   color: #fff;
   font-size: 11px;
   line-height: 11px;
@@ -3181,6 +3193,11 @@ figcaption {
   padding-left: 1px;
   float: none;
   text-align: left;
+}
+
+.text-block {
+  font-family: Light, sans-serif;
+  color: #1e4477;
 }
 
 html.w-mod-js *[data-ix="full-opacity-on-load"] {
